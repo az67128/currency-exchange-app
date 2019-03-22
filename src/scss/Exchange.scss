@@ -1,0 +1,79 @@
+@mixin button() {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  color:white;
+  font-size: inherit;
+}
+
+.exchange{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    & .slider{
+        height: 100% !important;   
+    }
+    & .currencyView{
+        flex-grow: 1;
+        color: white;
+    }
+    &__topBar{
+        min-height: 30px;
+        display: flex;
+        justify-content: space-between;
+        background: #195DFF;
+        color: white;
+        padding: 0.5rem 1rem;
+        align-items: center;
+        & > div{
+            min-width: 80px;
+            
+        }
+        & .topBar__button{
+            @include button();
+            border:1px solid transparent;
+            padding: 0.2rem;
+            border-radius: 4px;
+            &:hover{
+                border:1px solid white;
+            }
+        }
+    }
+    &__fromCurrency{
+        background: #195DFF;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-top-color: #195DFF;
+            border-bottom: 0;
+            margin-left: -20px;
+            margin-bottom: -20px;
+        }   
+    }
+    &__toCurrency{
+        background: #2149D5;
+    }
+}
+.pocketView{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    @media screen and (orientation: landscape) {
+        padding: 1rem 4rem;
+    }
+    @media screen and (orientation: portrait) {
+        padding: 1rem;
+    }
+    &__currency{
+        font-size:2rem;
+    }
+}

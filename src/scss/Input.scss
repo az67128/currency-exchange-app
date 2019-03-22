@@ -1,0 +1,13 @@
+.echangeInput{
+    background:none;
+    border:none;
+    border-bottom: 1px solid white;
+    text-align: right;
+    color:white;
+    font-size: 2rem;
+    width: 150px;
+    text-overflow: ellipsis;
+    &:focus{
+        outline:none;
+    }
+}
