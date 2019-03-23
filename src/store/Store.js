@@ -69,7 +69,7 @@ const Store = types
         .catch(err => console.log("Failed to get rates"))
         .finally(() => {
           store.updateCurrentPockets();
-          // store.cheduleRateRefresh();
+          store.cheduleRateRefresh();
         });
     },
 
