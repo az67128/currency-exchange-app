@@ -7,7 +7,7 @@ const PocketView = ({ pocket, setActivePocket, from, rate }) => {
     <div className="pocketView">
       <div>
         <div className="pocketView__currency">{pocket.currency}</div>
-        <div>You have {pocket.value}</div>
+        <div className="pocketView__youHave">You have {pocket.value}</div>
       </div>
       <div>
         <Input
