@@ -1,13 +1,13 @@
 # Currency exchange app example
 
-Run demo at [codesandbox](https://codesandbox.io/s/github/az67128/revolut-test-task/tree/master/)
+Run demo at [codesandbox](https://codesandbox.io/s/github/az67128/currency-exchange-app/tree/master/)
 
 ## Run local
 
 clone repository
 
 ```
-git clone https://github.com/az67128/revolut-test-task.git
+git clone https://github.com/az67128/currency-exchange-app.git
 cd revolut-test-task
 npm i
 npm start
